@@ -59,15 +59,43 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <select class="mdl-textfield__input" id="pasta" name="pasta">
+          <option></option>
+          <option value="15">Carbonara ($15.00)</option>
+          <option value="10">Spaghetti Bolognese ($10.00)</option>
+          <option value="11.5">Fettuccine Alfredo ($11.50)</option>
+          <option value="0">None</option>
+        </select>
+        <label class="mdl-textfield__label" for="pasta">Pasta Dishes</label>
+      </div>
         <p></p>
-        <img src="./images/menu.svg" alt="menu" width="50%" height="50%" />
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <select class="mdl-textfield__input" id="side" name="side">
+          <option></option>
+          <option value="2.50">Garlic Bread ($2.50)</option>
+          <option value="10">Caprese Salad ($10.00)</option>
+          <option value="6">Tiramisu ($6.00)</option>
+          <option value="0">None</option>
+        </select>
+        <label class="mdl-textfield__label" for="side">Sides</label>
+      </div>
+        <p></p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <select class="mdl-textfield__input" id="option" name="option">
+          <option></option>
+          <option value="no">Pick Up</option>
+          <option value="yes">Delivery (+$20,000)</option>
+        </select>
+        <label class="mdl-textfield__label" for="option">Pick up or Delivery</label>
+      </div>
         <p></p>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Say "Hello, World!"
+          Order
         </button>
         <!-- basic text -->
         <p></p>

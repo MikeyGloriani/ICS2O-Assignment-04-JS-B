@@ -1,7 +1,7 @@
 {
-    "name": "Template App Test",
-    "short_name": "Mikey's Test App",
-    "description": "Github Page for my template app",
+    "name": "Assignment 4: Pasta menu",
+    "short_name": "Assignment 4",
+    "description": "Just messing around with if statements",
     "scope": "/ICS2O-Assignment-04-JS-B/",
     "start_url": "/ICS2O-Assignment-04-JS-B/",
     "background_color": "#ffffff",
