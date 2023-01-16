@@ -8,8 +8,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Assignment-04-JS-B/sw.js", {
-    scope: "/ICS2O-Assignment-04-JS-B/",
+  navigator.serviceWorker.register("/ICS2O-Template-PWA/sw.js", {
+    scope: "/ICS2O-Template-PWA/",
   })
 }
 
@@ -30,28 +30,22 @@ function myButtonClicked() {
   const sidePrice = sides * taxes
   const sidePriceDelivery = (sides + deliveryFee) * taxes
 
-  if (delivery == "no" && sides != "0" && pasta != "0") {
-    document.getElementById("hello-world").innerHTML =
-      "Your total is: $" + dishAndSide.toFixed(2)
-  } else if (delivery == "no" && sides != "0" && pasta == "0") {
-    document.getElementById("hello-world").innerHTML =
-      "Your total is: $" + sidePrice.toFixed(2)
-  } else if (delivery == "yes" && sides != "0" && pasta == "0") {
-    document.getElementById("hello-world").innerHTML =
-      "Your total is: $" + sidePriceDelivery.toFixed(2)
-  } else if (delivery == "no" && sides != "0" && pasta == "0") {
-    document.getElementById("hello-world").innerHTML =
-      "Your total is: $" + dishPrice.toFixed(2)
-  } else if (delivery == "yes" && sides == "0" && pasta != "0") {
-    document.getElementById("hello-world").innerHTML =
-      "Your total is: $" + dishPriceDelivery.toFixed(2)
-  } else if (delivery == "yes" && sides != "0" && pasta != "0") {
-    document.getElementById("hello-world").innerHTML =
-      "Your total is: $" +
-      pastaComboDelivery.toFixed(2) +
-      " Thanks for spending 20k in delivery fees"
-  } else {
-    document.getElementById("hello-world").innerHTML =
-      "Please buy something I need to feed my wife and kids"
+  if (delivery == "no" && sides != "0" && pasta != "0")  {
+      document.getElementById("hello-world").innerHTML = "Your total is: $" + dishAndSide.toFixed(2)
+    }
+        else if (delivery == "no" && sides == "0" && pasta != "0")  {
+    document.getElementById("hello-world").innerHTML = "Your total is: $" + dishPrice.toFixed(2)
+        }
+    else if (delivery == "no" && sides != "0" && pasta == "0")  {
+      document.getElementById("hello-world").innerHTML = "Your total is: $" + sidePrice.toFixed(2)
+    }
+    else if (delivery == "yes" && sides == "0" && pasta != "0")  {
+    document.getElementById("hello-world").innerHTML = "Your total is: $" + dishPriceDelivery.toFixed(2)
+    }
+    else if (delivery == "yes" && sides != "0" && pasta == "0")  {
+    document.getElementById("hello-world").innerHTML = "Your total is: $" + sidePriceDelivery.toFixed(2)
+    }
+    else if (delivery == "yes" && sides != "0" && pasta != "0")  {
+      document.getElementById("hello-world").innerHTML = "Your total is: $" + pastaComboDelivery.toFixed(2) 
   }
 }
